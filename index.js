@@ -19,3 +19,31 @@ app.get('/', (req, res) => {
     }
 );
 
+// Creamos dos arreglos en donde almacenaremos los mails y los ...
+
+const arreglo_usuarios = Array()
+const arreglo_mails = Array()
+ app.post('/', (req, res) => {
+
+ // Guardamos el usuario y el email que venian en el Json del ...
+
+
+ const {usuario, email} = req.body;
+
+ // Guardamos el usuario en el arreglo de usuarios.
+arrreglo_usuarios.push(usuario)
+arreglo_mails.push(email)
+
+// Imprimimos los arrays para ver si se estan agregando los ...
+
+ console.log(usuarios)
+ console.log(mails)
+
+// Devolvemos un codigo de respuesta 201 indicando que el ...
+
+res.status(201).send({usuario,email})
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
