@@ -31,13 +31,13 @@ const arreglo_mails = Array()
  const {usuario, email} = req.body;
 
  // Guardamos el usuario en el arreglo de usuarios.
-arrreglo_usuarios.push(usuario)
+arreglo_usuarios.push(usuario)
 arreglo_mails.push(email)
 
 // Imprimimos los arrays para ver si se estan agregando los ...
 
- console.log(usuarios)
- console.log(mails)
+ console.log(arreglo_usuarios)
+ console.log(arreglo_mails)
 
 // Devolvemos un codigo de respuesta 201 indicando que el ...
 
